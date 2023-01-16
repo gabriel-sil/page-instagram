@@ -95,9 +95,20 @@ body {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-ing 0.4s forwards; /*ESSA ANIMAÇÃO EU CRIEI DEPOIS DE CIRAR KAYFRAME LÁ E, BAIXO */
+
+  /*esse forwards é pra manter as propriedades que eu defini no slide-ing (permancer 50%)*/
 }
+
+#switch button {
+  animation: slide-back 0.4s;
+  /*ESSE É PRA VOLTA */
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 
 /* links */
 ul {
@@ -169,5 +180,30 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animatoin */
+
+/*esse "slide-ing" foi o nome que eu inventei */
+@keyframes slide-ing {
+  /*from é onde ele vai começar */
+  from {
+    left: 0;
+  }
+  /*to é onde ele vai terminar */
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  /*from é onde ele vai começar */
+  from {
+    left: 50%;
+  }
+  /*to é onde ele vai terminar */
+  to{
+    left: 0;
   }
 }
