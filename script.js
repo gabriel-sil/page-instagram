@@ -20,11 +20,11 @@ function toglleMode() {
         if(html.classList.contains('light')) {
 
             // se tiver light mode, adicionar a imagem light
-            img.setAttribute('src', './assets/avatar-light.png')
+            img.setAttribute('src', 'https://media.licdn.com/dms/image/D4D03AQE4JAYpU9os3A/profile-displayphoto-shrink_200_200/0/1675804459247?e=1681344000&v=beta&t=XsqK9LqQdElr71ZWfVqcO_miGZSgkUwC5tTSRhyOeHI')
    } else {
 
     //se tiver sem ligh mode, manter a imagem normal
-    img.setAttribute('src', './assets/Avatar.png')
+    img.setAttribute('src', 'https://media.licdn.com/dms/image/D4D03AQE4JAYpU9os3A/profile-displayphoto-shrink_200_200/0/1675804459247?e=1681344000&v=beta&t=XsqK9LqQdElr71ZWfVqcO_miGZSgkUwC5tTSRhyOeHI')
   }
 
 }
